@@ -66,15 +66,9 @@ body {
 
 
 /*carousel*/
-.carousel {
-  padding: 0 2rem;
-}
-
 .carousel-home {
-  width: 100%;
+  width: 1300px;
   margin: 0 auto;
-  height: 450px;
-
 }
 
 .carousel-imagens {
@@ -87,7 +81,6 @@ body {
   object-fit: cover;
   margin: 0 auto;
 }
-
 
 .destaques {
   padding: 6rem;
@@ -129,7 +122,6 @@ body {
   background-color: var(--header-green)
 }
 
-
 .destaques .p-destaque {
   text-align: center;
   font-size: 1.9rem;
@@ -137,6 +129,17 @@ body {
   color:var(--header-green);
   margin-bottom: 4rem;
 }
+
+.card-img-top {
+  transition: transform .2s;
+}
+
+
+.card-img-top:hover {
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
 
 .flex-card {
   width: 100%;
@@ -154,18 +157,20 @@ body {
   color: var(--color-green)
 }
 
-.btn-card {
+.valor {
   font-weight: 600;
   color: var(--color-blue);
-  background-color: transparent;
-  padding: 0;
-  border: none;
+}
 
+.btn {
+  color: var(--black);
+  background-color: var(--color-celeste);
+  font-weight: 500;
 }
 
 .btn:hover {
-  border: none;
-   color: var(--color-pink)
+  background-color: var(--color-celeste);
+  color: var(--color-pink)
 }
 
 
