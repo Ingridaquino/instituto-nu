@@ -87,7 +87,9 @@ body {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
+  margin: 0 auto;
 }
 
 .categoria {
@@ -95,21 +97,24 @@ body {
   flex-direction:row;
   align-content: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 3rem;
 }
 
 .cate-goria {
-  width: 400px;
+  width: 500px;
   background-color: var(--color-pink);
   padding: 2rem;
   border-radius: 4px;
   text-align: center;
 }
 
-.cate-goria a {
+.cate-goria p {
+  font-size: 2rem;
   font-weight: 500;
   color: var(--white);
   transition: opacity 0.1s;
+  text-transform: uppercase;
 
 }
 
@@ -123,10 +128,11 @@ body {
 
 .destaques .p-destaque {
   text-align: center;
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: 500;
   color:var(--header-green);
-  margin-bottom: 4rem;
+  margin: 4rem 0;
+  text-transform: uppercase;
 }
 
 .card-img-top {
@@ -235,14 +241,39 @@ body {
 }
 
 
-@media(max-width: 789px){
-  .carousel-home {
-    height: 100%;
+
+
+/*vitrine*/
+
+.banner {
+  width: 100%;
+}
+
+.banner > img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.meninas {
+  color: var(--color-pink);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 4rem 0;
+}
+
+@media(max-width: 999px){
+  .cate-goria {
+    width: 390px;
+    padding: 1.2rem;
   }
 
+
   .footer {
-    height: 700px;  
-    padding: 1rem 2rem; 
+    height: 900px;  
+    padding: 2rem 2rem; 
   }
 
   .footer-list {
@@ -264,6 +295,10 @@ body {
 
   .pagamento, .atendimento {
     margin: 1rem;
+  }
+
+  .flex-card {
+    flex-direction: column;
   }
   
 }
