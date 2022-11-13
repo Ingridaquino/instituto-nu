@@ -26,20 +26,29 @@ body {
 
   --white: #fff;
   --black: #01011e;
+  
+  --text-size: 1.2rem;
+  --title-size: 2rem;
+  --sub-title: 1rem;
 }
 
 
 /*navbar*/
 .bar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
   background-color: var(--header-green);
   padding: 1rem; 
+
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 500;
   color: var(--color-pink);
   transition: opacity 0.1s;
+  margin-right: 4rem;
 }
 
 .logo:hover {
@@ -58,6 +67,7 @@ body {
 .ul-bar > li a {
   color: var(--white);
   transition: color .1s ease;
+  font-size: var(--title-size);
 }
 
 .ul-bar > li a:hover {
@@ -73,12 +83,6 @@ body {
 .carousel-imagens {
   margin: 0 auto;
   width: 100%;
-}
-
-.img-col {
-  width: 60% !important;
-  object-fit: cover;
-  margin: 0 auto;
 }
 
 .destaques {
@@ -102,19 +106,20 @@ body {
 }
 
 .cate-goria {
-  width: 500px;
+  width: 290px;
   background-color: var(--color-pink);
   padding: 2rem;
-  border-radius: 4px;
+  border-radius: 16px;
   text-align: center;
 }
 
-.cate-goria p {
-  font-size: 2rem;
+.cate-goria >   p {
+  font-size: 1.9rem;
   font-weight: 500;
   color: var(--white);
   transition: opacity 0.1s;
   text-transform: uppercase;
+  margin: 0;
 
 }
 
@@ -128,7 +133,7 @@ body {
 
 .destaques .p-destaque {
   text-align: center;
-  font-size: 2rem;
+  font-size: var(--title-size);
   font-weight: 500;
   color:var(--header-green);
   margin: 4rem 0;
@@ -171,6 +176,7 @@ body {
   color: var(--black);
   background-color: var(--color-celeste);
   font-weight: 500;
+  border-radius: 8px ;
 }
 
 .btn:hover {
@@ -219,14 +225,14 @@ body {
 }
 
 .p-footer {
-  font-size: 1.7rem;
+  font-size: var(--text-size);
   color: var(--color-celeste);
   text-align: justify;
 }
 
 .ul-list {
   text-align: start;
-  font-size: 1rem;
+  font-size: --sub-title;
   color: var(--white);
 
   display: flex;
@@ -236,7 +242,7 @@ body {
 }
 
 .ul-list > .icon {
-  font-size: 1.2rem;
+  font-size: var(--text-title);
   margin-top: 10px;
 }
 
@@ -267,7 +273,6 @@ body {
 @media(max-width: 999px){
   .cate-goria {
     width: 390px;
-    padding: 1.2rem;
   }
 
 
@@ -300,5 +305,15 @@ body {
   .flex-card {
     flex-direction: column;
   }
+   
+}
+
+@media(min-width:2220px){
+  .cate-goria {
+    width: 400px;
+  }
   
+  .cate-goria >   p {
+    font-size: 2.5rem;
+}
 }
