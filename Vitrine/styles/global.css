@@ -71,9 +71,24 @@ body {
 }
 
 .ul-bar > li a:hover {
-  color: var(--color-pink)
+  color: var(--color-pink);
 }
 
+.car {
+  cursor: pointer;
+}
+
+.car i {
+  font-size: 30px;
+  margin-left: 90px;
+  color: var(--color-pink);
+
+  transition: 0.5s;
+}
+
+.car i:hover{
+  opacity: 0.4;
+}
 
 /*carousel*/
 .carousel-home {
@@ -268,6 +283,17 @@ body {
   font-size: 2rem;
   font-weight: 500;
   margin: 2rem 0;
+}
+
+
+.input {
+  background-color: var(--header-green);
+  transition: background color 0.5s;
+}
+
+.input:hover {
+  background-color: var(--color-pink);
+  color: var(--white)
 }
 
 @media(max-width: 999px){
