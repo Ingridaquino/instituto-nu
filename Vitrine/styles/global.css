@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +17,7 @@ ul li {
 
 body {
   background-color: var(--white);
+  font-family: 'Inter', sans-serif;
 }
 
 :root {
@@ -40,12 +43,11 @@ body {
   justify-content:space-around;
   background-color: var(--header-green);
   padding: 1rem; 
-
 }
 
 .logo {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: bold;
   color: var(--color-pink);
   transition: opacity 0.1s;
   margin-right: 4rem;
@@ -68,6 +70,7 @@ body {
   color: var(--white);
   transition: color .1s ease;
   font-size: var(--title-size);
+  font-weight: 600;
 }
 
 .ul-bar > li a:hover {
@@ -130,7 +133,7 @@ body {
 
 .cate-goria >   p {
   font-size: 1.9rem;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--white);
   transition: opacity 0.1s;
   text-transform: uppercase;
@@ -149,7 +152,7 @@ body {
 .destaques .p-destaque {
   text-align: center;
   font-size: var(--title-size);
-  font-weight: 500;
+  font-weight: 700;
   color:var(--header-green);
   margin: 4rem 0;
   text-transform: uppercase;
@@ -243,6 +246,7 @@ body {
   font-size: var(--text-size);
   color: var(--color-celeste);
   text-align: justify;
+  font-weight: 500;
 }
 
 .ul-list {
@@ -276,15 +280,19 @@ body {
 }
 
 
-.meninas {
+
+.meninas, .meninos, .principal div > h2 {
   color: var(--color-pink);
   text-transform: uppercase;
   text-align: center;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   margin: 2rem 0;
 }
 
+.meninos {
+  color: var(--header-green);
+}
 
 .input {
   background-color: var(--header-green);
@@ -293,8 +301,20 @@ body {
 
 .input:hover {
   background-color: var(--color-pink);
-  color: var(--white)
+  color: var(--white);
 }
+
+.principal {
+  margin: 7rem auto;
+  width: 900px;
+  height: 40vh;
+}
+
+.principal > div p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
 
 @media(max-width: 999px){
   .cate-goria {
